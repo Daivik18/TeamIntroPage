@@ -7,22 +7,28 @@
     <title>Team Introduction Page</title>
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
             background: #f4f7fb;
-            text-align: center;
+            color: #222;
         }
 
         header {
             background: #172554;
             color: white;
-            padding: 40px;
+            text-align: center;
+            padding: 45px 20px;
         }
 
         header h1 {
-            margin: 0;
             font-size: 40px;
+            margin-bottom: 10px;
         }
 
         header p {
@@ -32,38 +38,57 @@
         .team {
             display: flex;
             justify-content: center;
+            align-items: stretch;
             gap: 25px;
             flex-wrap: wrap;
-            padding: 40px;
+            padding: 50px 25px;
         }
 
         .member {
             background: white;
-            width: 250px;
+            width: 270px;
             padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            border-radius: 18px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .member:hover {
+            transform: translateY(-8px);
         }
 
         .member img {
-            width: 120px;
-            height: 120px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
+            border: 5px solid #172554;
+            margin-bottom: 15px;
         }
 
         .member h2 {
-            margin: 15px 0 8px;
+            font-size: 24px;
+            margin-bottom: 10px;
         }
 
         .member p {
             color: #555;
+            margin: 7px 0;
+            font-size: 16px;
+        }
+
+        .role {
+            font-weight: bold;
+            color: #172554 !important;
         }
 
         footer {
             background: #172554;
             color: white;
-            padding: 20px;
+            text-align: center;
+            padding: 22px;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -77,36 +102,36 @@
 
     <section class="team">
 
-        <!-- Team Member 1 -->
+        <!-- Tulsi -->
         <div class="member">
-            <img src="https://via.placeholder.com/120" alt="Daivik">
+            <img src="tulsi.jpeg" alt="Tulsi">
+            <h2>Tulsi</h2>
+            <p>Department: Computer Science</p>
+            <p class="role">Frontend Developer</p>
+        </div>
+
+        <!-- Daivik -->
+        <div class="member">
+            <img src="daivik.jpeg" alt="Daivik">
             <h2>Daivik</h2>
             <p>Department: Computer Science</p>
-            <p>Frontend Developer</p>
+            <p class="role">Backend Developer</p>
         </div>
 
-        <!-- Team Member 2 -->
+        <!-- Arun -->
         <div class="member">
-            <img src="https://via.placeholder.com/120" alt="Srujan">
-            <h2>Srujan</h2>
-            <p>Department: Software Development</p>
-            <p>Backend Developer</p>
-        </div>
-
-        <!-- Team Member 3 -->
-        <div class="member">
-            <img src="https://via.placeholder.com/120" alt="Sai">
-            <h2>Sai</h2>
-            <p>Department: Design</p>
-            <p>UI/UX Designer</p>
-        </div>
-
-        <!-- New Intern -->
-        <div class="member">
-            <img src="https://via.placeholder.com/120" alt="Rahul">
-            <h2>Rahul</h2>
+            <img src="arun.jpeg" alt="Arun">
+            <h2>Arun</h2>
             <p>Department: Computer Science</p>
-            <p>Software Engineering Intern</p>
+            <p class="role">UI/UX Designer</p>
+        </div>
+
+        <!-- Abhiram - New Intern -->
+        <div class="member">
+            <img src="abhirarm.jpeg" alt="Abhiram">
+            <h2>Abhiram</h2>
+            <p>Department: Computer Science</p>
+            <p class="role">Software Engineering Intern</p>
         </div>
 
     </section>
